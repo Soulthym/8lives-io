@@ -1,0 +1,41 @@
+@import "../../../../styles/mixins";
+
+.section {
+  padding: 0 16px;
+  margin-top: 100px;
+  background: black;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 737px;
+    margin: auto;
+  }
+
+  .questions {
+    margin-top: 10px;
+
+    & > div:first-child > div {
+      padding-top: 0;
+    }
+  }
+
+  @include screen($sm) {
+    background-position-y: 200px;
+  }
+
+  @include screen($md) {
+    padding: 0 40px;
+    margin-top: 140px;
+    background-position-y: 60px;
+  }
+
+  @include screen($lg) {
+    background-position-y: 0;
+  }
+}
+
+
+
+
+

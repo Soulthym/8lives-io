@@ -1,0 +1,96 @@
+@import "../../styles/mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include screen($sm) {
+    flex-direction: row;
+    align-items: normal;
+    justify-content: normal;
+  }
+
+  .imgContainer {
+    max-width: 359px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .description {
+    max-width: 354px;
+    width: 100%;
+    margin-top: 16px;
+
+    .socials {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin-top: 16px;
+
+      li {
+        width: 32px;
+        height: 32px;
+
+        &.in:hover,  &.imdb:hover {
+           svg {
+             rect {
+               fill: #000000;
+             }
+             path {
+               fill: #FFFFFF;
+             }
+           }
+        }
+
+        &.link:hover {
+          svg {
+            rect {
+              fill: #000000;
+            }
+            path {
+              stroke: #FFFFFF;
+            }
+          }
+        }
+
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    @include screen($sm) {
+      margin-left: 24px;
+      margin-top: 0;
+    }
+
+    h3 {
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+
+      span {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.mt2 {
+  margin-top: 8px
+}
+
+.mt8 {
+  margin-top: 32px;
+}

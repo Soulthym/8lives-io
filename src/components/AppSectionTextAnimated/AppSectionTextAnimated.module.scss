@@ -1,0 +1,22 @@
+
+.content {
+    transform: translateY(50%);
+    opacity: 0;
+
+    .text {
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    .children {
+        margin-top: 16px;
+    }
+}

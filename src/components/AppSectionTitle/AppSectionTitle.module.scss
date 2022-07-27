@@ -1,0 +1,35 @@
+.container {
+    margin-bottom: 16px;
+}
+
+.name {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFB800;
+    margin-bottom: 16px;
+}
+
+.container > div {
+    margin-bottom: 16px;
+}
+
+.title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.title span:last-child {
+    color: #F8F962;
+}
+

@@ -1,0 +1,23 @@
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+
+  @include screen($lg) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+p {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}

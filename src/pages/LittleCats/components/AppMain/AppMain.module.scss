@@ -1,0 +1,128 @@
+@import "../../../../styles/mixins";
+
+.main {
+  padding: 20px 16px 0;
+  background-color: transparent;
+  width: 100%;
+  height:  calc(100vh - 72px);
+  position: relative;
+  overflow: hidden;
+
+  .banner {
+    position: absolute;
+    max-width: 1440px;
+    height: 480px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 480px;
+      width: auto;
+
+      @include screen($md) {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    @include screen($md) {
+      height: auto;
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  //.banner {
+  //  position: absolute;
+  //  width: 100%;
+  //  display: flex;
+  //  justify-content: center;
+  //  align-items: end;
+  //  top: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  right: 0;
+  //  max-width: 100%;
+  //  height: auto;
+  //
+  //  img {
+  //    height: 480px;
+  //    width: auto;
+  //
+  //    @include screen($md) {
+  //      height: 100%
+  //    }
+  //  }
+  //}
+
+  .container {
+    width: 100%;
+    max-width: 738px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 48px;
+
+    .content {
+      text-align: center;
+      height: calc(100% - 121px);
+
+      h1 {
+        position: relative;
+      }
+
+      p {
+        margin: 24px 0;
+      }
+
+      .hide {
+        position: absolute;
+        top: 44px;
+        background: black;
+        height: 44px;
+        width: 100%;
+
+        @include screen($md) {
+          top: 56px;
+          height: 56px;
+        }
+      }
+    }
+  }
+
+  @include screen($sm) {
+    padding-top: 40px;
+  }
+
+  @include screen($lg) {
+    padding-top: 70px;
+  }
+
+  @include screen($xl) {
+    padding-top: 100px;
+  }
+
+  .anim-block-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .anim-show.is-inview {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  .anim-block {
+    display: block;
+  }
+}

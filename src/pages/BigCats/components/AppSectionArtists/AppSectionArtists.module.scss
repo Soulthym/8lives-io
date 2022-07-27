@@ -1,0 +1,57 @@
+@import "../../../../styles/mixins";
+
+.section {
+  padding: 60px 16px;
+  margin-top: 100px;
+  background: linear-gradient(255.44deg, rgba(255, 255, 255, 0) -0.77%, rgba(255, 255, 255, 0.2) 102.28%);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+    background: black;
+    z-index: 2;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 929px;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+  }
+
+  .artists {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+
+
+    & > div {
+      &:first-child {
+        margin-bottom: 24px;
+      }
+
+      &:last-child {
+        @include screen($md) {
+          align-self: end;
+        }
+      }
+    }
+
+  }
+
+
+  @include screen($md) {
+    padding: 60px 40px;
+    margin-top: 140px;
+  }
+}
+

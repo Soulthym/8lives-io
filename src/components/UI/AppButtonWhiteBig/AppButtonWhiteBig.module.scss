@@ -1,0 +1,23 @@
+a.button {
+  text-decoration: none;
+}
+
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: none;
+  padding: 16px 32px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+
+
+  font-family: Source Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 20px;
+  color: #000000;
+}

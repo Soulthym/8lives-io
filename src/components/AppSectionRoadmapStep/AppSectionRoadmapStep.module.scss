@@ -1,0 +1,95 @@
+@import "../../styles/mixins";
+
+.step {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(262.31deg, rgba(255, 255, 255, 0.1) 0.27%, rgba(255, 255, 255, 0) 99.02%);
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 64px 30px 64px 60px;
+  position: relative;
+
+  .content {
+    height: fit-content;
+
+    h3 {
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      color: #FFFFFF;
+
+      &.uppercase {
+        text-transform: uppercase;
+      }
+
+      span {
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 20px;
+        color: #FFB800;
+      }
+    }
+
+    p {
+      font-family: Lato, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 36px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      margin-top: 24px;
+
+      &:not(:first-child) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  @include screen($md) {
+    padding: 64px 64px 64px 160px;
+  }
+
+  // steps line
+  .stepsLine {
+    position: absolute;
+    bottom: 0;
+    width: 24px;
+    height: 100%;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 74px;
+
+    @include screen($sm) {
+      left: 20px;
+    }
+
+    @include screen($md) {
+      left: 70px;
+    }
+
+    .stepPoint {
+      margin-bottom: 8px;
+      margin-top: -8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .loadedLine {
+      position: absolute;
+      top: 20px;
+      z-index: 5;
+    }
+  }
+}
+

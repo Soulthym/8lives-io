@@ -1,0 +1,132 @@
+@import "../../../../styles/mixins";
+
+.section {
+  padding-top: 100px;
+  background-image: url("./img/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  margin-bottom: 0;
+  overflow: hidden;
+
+  @include screen($md) {
+    padding-top: 120px;
+    margin-top: 20px;
+  }
+
+  .containerContent {
+    padding: 0 16px;
+
+    @include screen($md) {
+      padding: 0 40px;
+    }
+
+    .content {
+      margin: 0 auto;
+      text-align: center;
+      padding: 60px 24px;
+      max-width: 1120px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(262.31deg, rgba(255, 255, 255, 0.08) 0.27%, rgba(255, 255, 255, 0) 99.02%);
+      border: 1px solid #404040;
+      box-sizing: border-box;
+      border-radius: 16px;
+
+      @include screen($md) {
+        padding: 60px;
+      }
+
+      h3 {
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 737px;
+        width: 100%;
+      }
+
+      p {
+        padding: 16px 0;
+      }
+
+
+    }
+  }
+}
+
+.footer {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  margin-top: 100px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    p {
+      font-family: Source Sans Pro, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #FFFFFF;
+      flex: 1;
+    }
+
+    .socials {
+      display: flex;
+      list-style-type: none;
+
+      li {
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        a:hover {
+          svg {
+            circle {
+              stroke: #A8A8A8;
+            }
+
+            path {
+              fill: #A8A8A8;
+            }
+          }
+        }
+
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+    }
+
+    > div {
+      width: 100%;
+      margin-bottom: 22px;
+
+      @include screen($sm) {
+        width: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include screen($md) {
+    padding: 16px 40px;
+    margin-top: 140px;
+  }
+}
+
