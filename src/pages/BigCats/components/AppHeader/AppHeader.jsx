@@ -89,7 +89,7 @@ function AppHeader(props) {
                 </nav>
                 <div className={s.mobileSocialsContainer}>
                     <ul className={s.socials}>
-                        <li><a href="https://discord.com/invite/bigcats" target="_blank" rel="noreferrer"><Discord/></a></li>
+                        <li><a href="https://discord.com/invite/8lives" target="_blank" rel="noreferrer"><Discord/></a></li>
                         <li><a href="https://mobile.twitter.com/bigcats_nft" target="_blank" rel="noreferrer"><Twitter /></a></li>
                         <li><a href="https://instagram.com/bigcats.nft?utm_medium=copy_link" target="_blank" rel="noreferrer"><Instagram/></a></li>
                     </ul>
