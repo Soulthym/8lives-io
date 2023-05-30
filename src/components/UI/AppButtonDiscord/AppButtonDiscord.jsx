@@ -6,7 +6,7 @@ function AppButtonDiscord({join = false}) {
     return (
         <a className={`${s.button} ${s.buttonMimas}`}
            rel="noreferrer"
-           href="https://discord.com/invite/bigcats"
+           href="https://discord.com/invite/8lives"
            target="_blank"
         >
             <span>
