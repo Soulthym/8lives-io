@@ -53,7 +53,7 @@ function AppHeader(props) {
                     <div className={s.rightMenu}>
                         <div className={s.socialsContainer}>
                             <ul className={s.socials}>
-                                <li><a href="https://discord.com/invite/bigcats" target="_blank" rel="noreferrer"><Discord/></a></li>
+                                <li><a href="https://discord.com/invite/8lives" target="_blank" rel="noreferrer"><Discord/></a></li>
                                 <li><a href="https://twitter.com/8livesio" target="_blank" rel="noreferrer"><Twitter /></a></li>
                                 <li><a href="https://instagram.com/8livesio?utm_medium=copy_link" target="_blank" rel="noreferrer"><Instagram/></a></li>
                             </ul>
